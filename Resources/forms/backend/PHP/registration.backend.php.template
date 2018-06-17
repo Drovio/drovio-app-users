@@ -1,0 +1,39 @@
+// REGISTER USER TO IDENTITY SERVICE
+if ($_SERVER['REQUEST_METHOD'] == "POST")
+{
+	// Get information to send
+	$curl = curl_init();
+
+	// Set options
+	$options = array();
+	$options[CURLOPT_RETURNTRANSFER] = 1;
+	$options[CURLOPT_URL] = "https://api.drov.io/apps/89/%{akey}/api/register";
+
+	// Set post parameters
+	$options[CURLOPT_POST] = 1;
+	$options[CURLOPT_POSTFIELDS] = array("firstname" => $_POST['firstname'], "lastname" => $_POST['lastname'], "email" => $_POST['email'], "password" => $_POST['password'], "login" => FALSE);
+	
+	// Uncomment the following line to disable certificate verification (for some php versions)
+	// $options[CURLOPT_SSL_VERIFYPEER] = false;
+
+	// Set options array
+	curl_setopt_array($curl, $options);
+
+	// Execute and close url
+	$response = curl_exec($curl);
+	curl_close($curl);
+
+	// Check response
+	$responseArray = json_decode($response, TRUE);
+	if ($responseArray['body']['register'] && $responseArray['body']['register']['payload']['status'] == 1)
+	{
+		// Successfull registration
+		
+		// If there was a login, get authentication token
+		$authToken = $responseArray['body']['register']['payload']['auth_token'];
+	}
+	else
+	{
+		// Show error message
+	}
+}

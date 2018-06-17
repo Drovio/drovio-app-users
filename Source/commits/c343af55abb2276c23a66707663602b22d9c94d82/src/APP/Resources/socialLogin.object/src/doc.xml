@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Resources" namespace="\">
+  <class name="socialLogin" abstract="">
+    <info>
+      <version>2.1</version>
+      <build>1</build>
+      <datecreated>1448047330</datecreated>
+      <daterevised>1448998149</daterevised>
+      <extends>
+        <object>\AEL\Resources\appSettings</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>socialLogin</title>
+      <description>Class that helps manage the settings for the supported social authentications.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="loginType">
+          <description>which social login is the current object setting</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description>Creates the object and sets the social network the object handles.</description>
+          <parameters>
+            <parameter name="$type" type="string" defaultvalue="">
+              <description>The social network for which the object handles settings.
+Accepted values:
+- facebook
+- google
+- github
+- twitter
+- linkedin
+- windows</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="setup" returntype="void">
+          <description>Sets all the required parameters for the login to function.</description>
+          <parameters>
+            <parameter name="$client_id" type="string" defaultvalue="">
+              <description>The OAuth client id from the provider.</description>
+            </parameter>
+            <parameter name="$client_secret" type="string" defaultvalue="">
+              <description>The OAuth app secret from the provider.</description>
+            </parameter>
+            <parameter name="$scope" type="string" defaultvalue="">
+              <description>The scope attribute to request authorization for.</description>
+            </parameter>
+            <parameter name="$redirect_after_signin" type="string" defaultvalue="">
+              <description>URL where to redirect users after they successfully sign in.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="mixed">
+          <description>Get a value from the settings.</description>
+          <parameters>
+            <parameter name="$key" type="string" defaultvalue="">
+              <description>Key for required setting.</description>
+            </parameter>
+          </parameters>
+          <returndescription>Returns the settings value or an array with all keys in lowercase.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getRedirectUri" returntype="string">
+          <description>Get the redirect uri that the user must set for the application.</description>
+          <parameters/>
+          <returndescription>The redirect uri after a successful social login.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

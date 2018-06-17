@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="accountPermissions"><sdk_dependencies><dependency library="DRVC" object="Security"></dependency><dependency library="UI" object="Apps"></dependency><dependency library="UI" object="Forms"></dependency><dependency library="UI" object="Presentation"></dependency></sdk_dependencies><app_dependencies/></view>

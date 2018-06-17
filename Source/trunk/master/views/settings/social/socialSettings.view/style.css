@@ -1,0 +1,22 @@
+.social-login-settingsContainer  {
+	padding: 20px 10px;
+	box-sizing: border-box
+}
+.social-login-settingsContainer .social-logo {
+	width: 150px;
+	height: 50px;
+}
+
+.social-login-settingsContainer .social-logo.facebook {
+	background: url("%{media}/social_logo/facebook-logo.svg");
+	background-size: cover;
+}
+
+.social-login-settingsContainer .social-logo.google {
+	background: url("%{media}/social_logo/google-logo.svg");
+	background-size: cover;
+}
+
+.social-login-settingsContainer .uaction {
+	cursor: pointer;
+}

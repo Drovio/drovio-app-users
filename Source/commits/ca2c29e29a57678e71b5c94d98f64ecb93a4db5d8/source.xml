@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map><library name="APP"><package name="Main"/><package name="Identity"><object name="account" title="account"/><object name="person" title="person"/></package><package name="Resources"><object name="settings" title="settings"/><object name="activityLog" title="activityLog"></object></package><package name="Security"><object name="appKey" title="appKey"/></package><package name="Mail"><object name="appMail" title="appMail"/></package></library></map>

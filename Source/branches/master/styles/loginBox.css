@@ -1,0 +1,26 @@
+.login-popup-overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 400;
+	background: rgba(0, 0, 0, 0.4);
+}
+.login-popup {
+	position: absolute;
+	top: 15%;
+	left: 0%;
+	background: #FFF;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
+}
+.popup-content {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}

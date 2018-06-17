@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Resources" namespace="\">
+  <class name="teamSettings" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>2</build>
+      <datecreated>1452100956</datecreated>
+      <daterevised>1452101448</daterevised>
+      <extends>
+        <object>\AEL\Resources\appSettings</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Generic settings for every managed team.</title>
+      <description>It stores settings including authentication options, payment types and more.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description>Create a new team settings instance.</description>
+          <parameters>
+            <parameter name="$teamName" type="string" defaultvalue="">
+              <description>The team name to manage settings for.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

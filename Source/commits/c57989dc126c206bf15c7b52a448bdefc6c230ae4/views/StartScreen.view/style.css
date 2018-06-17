@@ -1,0 +1,58 @@
+.startScreen h1.hd {
+	font-size: 16px;
+	margin: 50px 0px;
+	text-align: center;
+	color: #ff5252;
+}
+
+.startScreen .slogo {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url('%{media}/icons/dbIcon.svg') no-repeat center;
+	background-size: cover;
+	opacity: 0.5;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.startScreen .slogo:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.startScreen p.sub {
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+	color: #5E6570;
+}
+
+.startScreen #setup_button {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px 12px;
+	background: #ff5252;
+	color: #FFF;
+	border: 1px solid #ff5252;
+	text-align: center;
+	line-height: 16px;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

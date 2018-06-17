@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Security" namespace="\">
+  <class name="appKey" abstract="">
+    <info>
+      <version>2.0</version>
+      <build>1</build>
+      <datecreated>1445169322</datecreated>
+      <daterevised>1446311366</daterevised>
+      <extends>
+        <object>\APP\Security\publicAppKey</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Application key validator.</title>
+      <description>Extends the Application public key interface and can validate the received key from the API request.</description>
+      <deprecated>Use \APP\Security\publicAppKey instead.</deprecated>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

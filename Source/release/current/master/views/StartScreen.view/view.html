@@ -1,0 +1,13 @@
+<div class="startScreen">
+	<h1 class="hd" data-literal='{"scope":"sscreen","name":"hd_start"}' />
+	<div class="slogo"></div>
+	<p class="sub db_name"></p>
+	<script>
+		// Set timeout to fake waiting to setup ;-)
+		setTimeout(function() {
+			jq(".startScreen .formContainer form").trigger("submit");
+		}, 3000);
+	</script>
+	<div class="formContainer"></div>
+	<div class="loading_ico" />
+</div>

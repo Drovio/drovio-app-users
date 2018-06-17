@@ -1,0 +1,25 @@
+.guide {
+	& {
+		padding: 10px;
+	}
+	.subtitle {
+		padding: 5px 10px;
+		font-weight: 900;
+	}
+	.instructions {
+		margin-bottom: 20px;
+	}
+	.instructions:last-child {
+		margin-bottom: 0px;
+	}
+	.instructions .redirect_uri {
+		font-size: 1.1em;
+		padding: 3px 5px;
+		background: #EEE;
+		border: 1px solid #CCC;
+		margin-top: 5px;
+	}
+	a.link {
+		color: #ff5252;
+	}
+}

@@ -1,0 +1,69 @@
+.authSettings {
+	.social-logins {
+		width: 500px;
+		margin: 10px auto;
+		border-top: 1px solid #41576E;
+	}
+	.sc-box {
+		& {
+			padding: 10px;
+			border: 1px solid #41576E;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			width: 350px;
+			margin: 10px auto;
+			overflow: auto;
+		}
+		.sc-ico {
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin-right: 15px;
+			background: url('%{resources}/loginbox/socialIcons.svg') no-repeat center;
+			background-size: cover;
+			background-position: 0px 0px;
+		}
+		.sc-ico.facebook {
+			background-position: 0px 0px;
+		}
+		.sc-ico.google {
+			background-position: 0px -24px;
+		}
+		.sc-ico.email {
+			background-position: 0px -216px;
+		}
+		.sc-title {
+			float: left;
+			color: #f2f2f2;
+			font-size: 1.1em;
+			line-height: 24px;
+		}
+		.sc-switch {
+			float: right;
+		}
+		.sc-tick {
+			float: right;
+			width: 24px;
+			height: 24px;
+			background: url('%{resources}/dashboard/setup/success_tick.svg') no-repeat center;
+			background-size: cover;
+		}
+	}
+	.successContainer {
+		& {
+			text-align: center;
+		}
+		.success_ico {
+			width: 50px;
+			height: 50px;
+			margin: 0 auto 20px;
+			background: url('%{resources}/dashboard/setup/success_tick.svg') no-repeat center;
+			background-size: cover;
+		}
+		.success_title {
+			font-size: 1em;
+			font-weight: normal;
+		}
+	}
+}

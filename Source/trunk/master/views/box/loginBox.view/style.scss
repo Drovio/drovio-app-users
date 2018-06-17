@@ -1,0 +1,281 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,greek";
+
+.identity-login-box-container {
+	& {
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 13px !important;
+		-webkit-font-smoothing: antialiased;
+		
+		position: relative;
+		background: #FFF;
+		padding: 25px;
+		text-align: center;
+		min-width: 250px;
+		max-width: 350px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		overflow: auto;
+		color #5E6570;
+	}
+	.bx-hd {
+		text-transform: uppercase;
+		color: #ff5252;
+		font-size: 1.2em;
+		margin: 10px 0px;
+		font-weight: bold;
+	}
+	.bx-sub {
+		color #5E6570;
+		font-size: 1em;
+		margin: 5px 0px;
+		font-weight: normal;
+	}
+	.bx-sub.action {
+		color: #ff5252;
+		cursor: pointer;
+	}
+	.box-header {
+		& {
+			overflow: auto;
+		}
+		.login-ico {
+			width: 60px;
+			height: 60px;
+			margin: 10px auto;
+			background: #F3F3F3 url('%{media}/loginbox/login-profile.svg') no-repeat center;
+			background-size: cover;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+		}
+		.btn-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 24px;
+			height: 24px;
+			background: url('%{media}/loginbox/closeX.svg') no-repeat center;
+			background-position: 0px -24px;
+			background-size: cover;
+			cursor: pointer;
+			display: none;
+		}
+	}
+	.identity-login-box.dialog .box-header .btn-close {
+		display: block;
+	}
+	.box-main {
+		& {
+		}
+		&.hidden {
+			display: none !important;
+		}
+		.social {
+			& {
+				overflow: auto;
+				max-width: 300px;
+				margin: 0 auto;
+				margin-bottom: 10px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+			.btn_social {
+				float: left;
+				margin: 5px;
+				width: 40px;
+				height: 40px;
+				cursor: pointer;
+				background: url('%{media}/loginbox/socialIcons.svg') no-repeat;
+				background-size: cover;
+				border-radius: 3px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				opacity: 1;
+				transition: all .2s ease-in-out;
+				-webkit-transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+			}
+			.btn_social.fb {
+				background-color: #3c589a;
+				background-position: 0px 0px;
+			}
+			.btn_social.gp {
+				background-color: #dd4b39;
+				background-position: 0px -40px;
+			}
+			.btn_social.gh {
+				background-color: #5E6570;
+				background-position: 0px -80px;
+			}
+			.btn_social.tt {
+				background-color: #55acee;
+				background-position: 0px -120px;
+			}
+			.btn_social.lin {
+				background-color: #006fa6;
+				background-position: 0px -160px;
+			}
+			.btn_social.win {
+				background-color: #0078D7;
+				background-position: 0px -200px;
+			}
+			.btn_social:hover {
+				opacity: 0.75;
+				transition: all .2s ease-in-out;
+				-webkit-transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+			}
+		}
+		.login_or {
+			margin-top: 10px;
+			color: #555459;
+			text-align: center;
+		}
+		.formContainer {
+			& {
+				padding: 5px;
+			}
+			.inp-container {
+				border: 1px solid #999;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				margin: 8px 0px;
+			}
+			.lpinp {
+				width: 100%;
+				height: 36px;
+				padding: 10px 12px;
+				margin: 0px;
+				font-size: 14px;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				color: #777;
+				outline: none;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+			}
+			.inp-container .lpinp {
+				border: none;
+				border-bottom: 1px solid #DDD;
+			}
+			.inp-container .lpinp:last-child {
+				border-bottom: none;
+			}
+			.lpbtn {
+				padding: 8px 30px;
+				max-width: 45%;
+				margin: 8px auto;
+				font-size: 13px;
+				border-color: rgba(0, 0, 0, 0.1);
+				background: #ff5252;
+				background-image: -webkit-linear-gradient(top, #ff6161 0%, #ff4343 100%);
+				background-image: -o-linear-gradient(top, #ff6161 0%, #ff4343 100%);
+				background-image: linear-gradient(to bottom, #ff6161 0%, #ff4343 100%);
+				background-repeat: repeat-x;
+				color: #FFF;
+				transition: background .2s ease-in-out;
+				-webkit-transition: background .2s ease-in-out;
+				-moz-transition: background .2s ease-in-out;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+			}
+			.lpbtn:hover {
+				border-color: rgba(0, 0, 0, 0.1);
+				background: #ff4343;
+				background-image: -webkit-linear-gradient(top, #ff5252 0%, #ff2e2e 100%);
+				background-image: -o-linear-gradient(top, #ff5252 0%, #ff2e2e 100%);
+				background-image: linear-gradient(to bottom, #ff5252 0%, #ff2e2e 100%);
+				background-repeat: repeat-x;
+				color: white;
+				outline: none;
+				transition: background .2s ease-in-out;
+				-webkit-transition: background .2s ease-in-out;
+				-moz-transition: background .2s ease-in-out;
+			}
+			.ntf {
+				color: #777;
+			}
+			.ntf.error {
+				color: #c00403;
+			}
+		}
+		&.register .terms {
+			& {
+				
+			}
+			.ico {
+				float: left;
+				width: 24px;
+				height: 24px;
+				background: url('%{media}/loginbox/terms-ico.svg') no-repeat center;
+				background-size: cover;
+				margin: 3px 0px;
+			}
+			.bx-sub {
+				font-size: 0.9em;
+				color: #999;
+			}
+		}
+		&.success {
+			.ico {
+				width: 70%;
+				height: 80px;
+				margin: 20px auto;
+				background: url('%{media}/loginbox/success_tick.svg') no-repeat center;
+				background-size: contain;
+			}
+			.bx-succ-title {
+				margin: 20px 0px;
+				font-size: 1.15em;
+				text-align: center;
+				color: #42B549;
+			}
+		}
+	}
+	.box-footer {
+		& {
+			border-top: 1px solid #CCC;
+			margin-top: 10px;
+			padding-top: 10px;
+			color: #777;
+			font-weight: normal;
+		}
+		.ft-lnk,
+		.ft-lnk-bull {
+			display: inline-block;
+			margin: 5px 0px;
+		}
+		.ft-lnk {
+			cursor: pointer;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.ft-lnk:hover {
+			color: #ff5252;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.ft-lnk-bull {
+			margin: 5px;
+		}
+		.ft-lnk.hidden,
+		.ft-lnk-bull.hidden {
+			display: none !important;
+		}
+	}
+}

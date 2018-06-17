@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Utils" namespace="\">
+  <class name="UserLogger" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1447866266</datecreated>
+      <daterevised>1447866266</daterevised>
+      <extends>
+        <object>\APP\Utils\Logger</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>User logger</title>
+      <description>This is an advanced logger that logs activity for each user separately.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="log" returntype="boolean" static="true">
+          <description>Log a user activity.</description>
+          <parameters>
+            <parameter name="$userID" type="integer" defaultvalue="">
+              <description>The user id to log for.</description>
+            </parameter>
+            <parameter name="$logType" type="string" defaultvalue="">
+              <description>The log type.</description>
+            </parameter>
+            <parameter name="$message" type="string" defaultvalue="">
+              <description>The message of the log, if any.</description>
+            </parameter>
+          </parameters>
+          <returndescription>True on success, false on failure.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

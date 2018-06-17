@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Resources" namespace="\">
+  <class abstract="" name="socialLogin">
+    <info>
+      <version>1.0</version>
+      <build>1</build>
+      <datecreated>1448047330</datecreated>
+      <daterevised>1448120735</daterevised>
+      <extends>
+        <object>\AEL\Resources\appSettings</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>socialLogin</title>
+      <description>Class that helps manage the settings for the supported social authentications.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop name="loginType" type="string">
+          <description>which social login is the current object setting</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method returntype="void" name="__construct">
+          <description>Creates the object and sets the social network the object handles.</description>
+          <parameters>
+            <parameter defaultvalue="" type="string" name="$type">
+              <description>The social network for which the object handles settings.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method returntype="void" name="setup">
+          <description>Sets all the required parameters for the login to function.</description>
+          <parameters>
+            <parameter defaultvalue="" type="string" name="$client_id">
+              <description>App id.</description>
+            </parameter>
+            <parameter defaultvalue="" type="string" name="$client_secret">
+              <description>App secret</description>
+            </parameter>
+            <parameter defaultvalue="" type="string" name="$redirect_after_signin">
+              <description>URL where to redirect users after they successfully sign in.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method returntype="string" name="get">
+          <description>Value stored for given key.</description>
+          <parameters>
+            <parameter defaultvalue="" type="string" name="$key">
+              <description>Key for required setting.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method returntype="string" name="getRedirectUri">
+          <description>Creates the redirect uri the user must set for the application.</description>
+          <parameters/>
+          <returndescription>URL user must set as redirect uri when creating application for social login.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

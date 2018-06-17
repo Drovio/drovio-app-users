@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Security" namespace="\">
+  <class name="publicAppKey" abstract="">
+    <info>
+      <version>2.0</version>
+      <build>1</build>
+      <datecreated>1446311529</datecreated>
+      <daterevised>1448804360</daterevised>
+      <extends>
+        <object>\AEL\Security\publicKey</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Application public key validator.</title>
+      <description>Extends the Application public key interface and can validate the received key from the API request.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="validate" returntype="boolean" static="true">
+          <description>Validate whether the request akey is public and valid for the team it represents.</description>
+          <parameters/>
+          <returndescription>True if valid, false otherwise.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeamID" returntype="integer" static="true">
+          <description>Get the team id from the given api key.</description>
+          <parameters/>
+          <returndescription>The team id or NULL on error.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="validateOrigin" returntype="boolean" static="true">
+          <description>Validate whether the api key is valid for the given origin.</description>
+          <parameters>
+            <parameter name="$origin" type="string" defaultvalue="">
+              <description>The origin to check.</description>
+            </parameter>
+          </parameters>
+          <returndescription>True if valid, false otherwise.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAPIKey" returntype="string" static="true">
+          <description>Get the current request api key.</description>
+          <parameters/>
+          <returndescription>The API key.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

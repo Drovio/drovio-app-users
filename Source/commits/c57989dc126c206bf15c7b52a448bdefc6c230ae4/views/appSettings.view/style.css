@@ -1,0 +1,10 @@
+.applicationSettings {
+	padding: 0px 50px;
+}
+
+.applicationSettings h1.hd {
+	font-size: 16px;
+	margin: 50px 0px;
+	text-align: center;
+	color: #ff5252;
+}

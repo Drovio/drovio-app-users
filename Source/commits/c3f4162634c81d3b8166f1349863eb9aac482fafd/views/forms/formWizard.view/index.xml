@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="formWizard"><sdk_dependencies><dependency library="AEL" object="Resources"></dependency><dependency library="UI" object="Apps"></dependency><dependency library="UI" object="Developer"></dependency><dependency library="UI" object="Forms"></dependency><dependency library="UI" object="Presentation"></dependency></sdk_dependencies><app_dependencies><dependency library="APP" object="Resources"></dependency><dependency library="APP" object="Security"></dependency></app_dependencies></view>

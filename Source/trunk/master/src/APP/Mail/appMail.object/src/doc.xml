@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Mail" namespace="\">
+  <class name="appMail" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1445880089</datecreated>
+      <daterevised>1445880089</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Application mailer</title>
+      <description>Sends emails to users for specific actions.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="sendResetPasswordMail" returntype="void" static="true">
+          <description>Send password recovery directions to the user.</description>
+          <parameters>
+            <parameter name="$email" type="string" defaultvalue="">
+              <description>The user's email.</description>
+            </parameter>
+            <parameter name="$resetID" type="string" defaultvalue="">
+              <description>The reset id token.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="sendPasswordUpdatedConfirmation" returntype="void" static="true">
+          <description>Send a confirmation email for updating the user's password.</description>
+          <parameters>
+            <parameter name="$email" type="string" defaultvalue="">
+              <description>The user's email.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="sendWelcomeEmail" returntype="void" static="true">
+          <description>Send a welcome email to the user.</description>
+          <parameters>
+            <parameter name="$email" type="string" defaultvalue="">
+              <description>The user's email.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="sendTemplateMail" returntype="void" static="true">
+          <description>Send an email from the templates.</description>
+          <parameters>
+            <parameter name="$recipient" type="string" defaultvalue="">
+              <description>The recipient's email address.</description>
+            </parameter>
+            <parameter name="$subject" type="string" defaultvalue="">
+              <description>The email subject.</description>
+            </parameter>
+            <parameter name="$templatePath_text" type="string" defaultvalue="">
+              <description>The path to the email text content.</description>
+            </parameter>
+            <parameter name="$templatePath_html" type="string" defaultvalue="">
+              <description>The path to the email html content.</description>
+            </parameter>
+            <parameter name="$attr" type="array" defaultvalue="">
+              <description>An array of attributes for the email body.
+$attr['attr_name'] = [attr_value].</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

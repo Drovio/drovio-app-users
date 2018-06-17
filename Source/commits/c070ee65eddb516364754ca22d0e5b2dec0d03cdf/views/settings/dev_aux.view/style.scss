@@ -1,0 +1,43 @@
+.social-login-settingsContainer {
+	& {
+		position: relative;
+		height: 100%;
+		overflow: auto;
+		width: 95%;
+		margin: 0px 2.5%;
+		padding-top: 20px;
+		text-align: center;
+		margin 10px 20%;
+	}
+}
+.social-logo {
+	& {
+		float: left;
+		width: 150px;
+		height: 50px;
+		background-size: cover;
+		margin-right: 15px;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+    		background-repeat: no-repeat;
+    		background-position: center;
+	}
+	&.facebook {
+		background-image: url('%{media}/social_logo/Facebook-logo.svg');
+	}
+	
+	&.google {
+		background-image: url('%{media}/social_logo/Google-logo.svg');
+	}
+}
+
+.uaction {
+	backgroud: grey;
+}
+
+.uaction:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: .9;
+}

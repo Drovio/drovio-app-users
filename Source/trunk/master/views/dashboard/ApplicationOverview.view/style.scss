@@ -1,0 +1,60 @@
+.loginBoxApplicationContainer {
+	& {
+		background: #2E4358;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		position: relative;
+	}
+	.loginBoxApplication {
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		position: relative;
+	}
+	.home-bar {
+		& {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			height: 50px;
+			background: #2E4358;
+			padding: 10px;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		.bar-ico.home {
+			width: 30px;
+			height: 30px;
+			float: left;
+			margin-left: 10px;
+			cursor: pointer;
+			background: url('%{resources}/dashboard/home.svg') no-repeat center;
+			background-size: cover;
+			opacity: 0.3;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.bar-ico.home:hover {
+			opacity: 1;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+	}
+	.dashboard-container {
+		position: absolute;
+		top: 50px;
+		bottom: 0px;
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+}

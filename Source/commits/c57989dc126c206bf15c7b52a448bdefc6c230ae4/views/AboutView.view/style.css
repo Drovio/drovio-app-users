@@ -1,0 +1,20 @@
+.aboutApplication {
+	padding: 0px 50px;
+}
+
+.aboutApplication h1.hd {
+	font-size: 16px;
+	margin: 50px 0px;
+	text-align: center;
+	color: #ff5252;
+}
+
+.aboutApplication p, .aboutApplication ul, .aboutApplication li {
+	color: #5E6570;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+.aboutApplication a {
+	color: #ff5252;
+}

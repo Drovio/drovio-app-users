@@ -1,0 +1,28 @@
+.demoInfo {
+	text-align: center;
+	color: #5E6570;
+}
+
+.demoInfo h1.hd {
+	font-size: 1.2em;
+	margin: 10px 0px;
+}
+
+.demoInfo p.notes {
+	font-size: 1.1em;
+	line-height: 16px;
+}
+.demoInfo .code {
+	width: 80%;
+	margin: 20px auto;
+	padding: 10px 15px;
+	border: 1px solid #CCC;
+	background: #DDD;
+	overflow: auto;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.demoInfo .code div, .demoInfo .code span {
+	margin: 5px 0px;
+}

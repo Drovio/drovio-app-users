@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="googleLogin"><sdk_dependencies><dependency library="AEL" object="Identity"></dependency><dependency library="AEL" object="Security"></dependency><dependency library="UI" object="Apps"></dependency></sdk_dependencies><app_dependencies><dependency library="APP" object="Resources"></dependency></app_dependencies></view>

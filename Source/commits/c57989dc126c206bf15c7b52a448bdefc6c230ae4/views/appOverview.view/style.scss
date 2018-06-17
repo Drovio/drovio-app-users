@@ -1,0 +1,55 @@
+.appOverview {
+	h1.hd {
+		font-size: 16px;
+		margin: 50px 0px;
+		text-align: center;
+		color: #ff5252;
+	}
+	.qlinks {
+		& {
+			width: 80%;
+			margin: 0 auto;
+			overflow: auto;
+		}
+		.ql {
+			width: 33.33%;
+			float: left;
+			overflow: auto;
+			cursor: pointer;
+		}
+		.ql .ico {
+			width: 90%;
+			margin: 0px 5%;
+			margin-bottom: 10px;
+			height: 100px;
+			background: url('%{media}/icons/overviewIcons.svg') no-repeat;
+			background-size: 100px 400px;
+			background-position: center 0px;
+			opacity: 0.5;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.ql.users .ico {
+			background-position: center 0px;
+		}
+		.ql.forms .ico {
+			background-position: center -100px;
+		}
+		.ql.api .ico {
+			background-position: center -200px;
+		}
+		.ql:hover .ico {
+			opacity: 1;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+		}
+		.ql .title {
+			font-size: 12px;
+			text-align: center;
+			color: #5E6570;
+			line-height: 18px;
+		}
+	}
+}

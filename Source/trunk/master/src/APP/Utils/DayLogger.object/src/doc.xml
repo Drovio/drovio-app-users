@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Utils" namespace="\">
+  <class name="DayLogger" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1447867954</datecreated>
+      <daterevised>1447867954</daterevised>
+      <extends>
+        <object>\APP\Utils\Logger</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Day Activity Logger</title>
+      <description>Logs daily activity to a file.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="log" returntype="boolean" static="true">
+          <description>Log a daily activity.</description>
+          <parameters>
+            <parameter name="$logType" type="string" defaultvalue="">
+              <description>The log type.</description>
+            </parameter>
+            <parameter name="$message" type="string" defaultvalue="">
+              <description>The log message, if any.</description>
+            </parameter>
+          </parameters>
+          <returndescription>True on success, false on failure.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTodaySignupCount" returntype="integer" static="true">
+          <description>Get all sign ups for the current day.</description>
+          <parameters/>
+          <returndescription>Total sign ups for the current day.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getLastNDaysSignupCount" returntype="integer" static="true">
+          <description>Get sign up count for the last n days.</description>
+          <parameters>
+            <parameter name="$n" type="integer" defaultvalue="">
+              <description>The number of days to look back for signups.</description>
+            </parameter>
+          </parameters>
+          <returndescription>Count of sign ups for the last n days.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="registrationCounts" returntype="integer" static="true">
+          <description>Get total signups for a given day via the filename of the activity file log.</description>
+          <parameters>
+            <parameter name="$filename" type="string" defaultvalue="">
+              <description>The activity log filename.</description>
+            </parameter>
+          </parameters>
+          <returndescription>The total signups.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getDayFile" returntype="string" static="true">
+          <description>Get the filename of a log file for a given day.</description>
+          <parameters>
+            <parameter name="$time" type="integer" defaultvalue="">
+              <description>The timestamp to represent the day.
+If empty get the current time.
+It is empty by default.</description>
+            </parameter>
+          </parameters>
+          <returndescription>The filename.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

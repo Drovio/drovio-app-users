@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Identity" namespace="\">
+  <class name="accountSession" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1445438056</datecreated>
+      <daterevised>1445438056</daterevised>
+      <extends>
+        <object>\DRVC\Profile\accountSession</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Account session management class</title>
+      <description>This class handles the account session connection to the team identity database.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="getInstance" returntype="accountSession" static="true">
+          <description>Initialize the identity engine for the current team.</description>
+          <parameters/>
+          <returndescription>The accountSession object.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAPIInstance" returntype="accountSession" static="true">
+          <description>Initialize the identity engine for the team making the api request.
+It will get the team info from the api key given.</description>
+          <parameters/>
+          <returndescription>The accountSession object.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Utils" namespace="\">
+  <class name="Logger" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1447866048</datecreated>
+      <daterevised>1447866048</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Activity logger</title>
+      <description>This is an abstract activity logger</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="log" returntype="boolean" static="true">
+          <description>Create a new log entry.</description>
+          <parameters>
+            <parameter name="$type" type="string" defaultvalue="">
+              <description>The log type.</description>
+            </parameter>
+            <parameter name="$message" type="string" defaultvalue="">
+              <description>The log description.</description>
+            </parameter>
+            <parameter name="$includeTimestamp" type="boolean" defaultvalue="">
+              <description>Whether to include a timestamp in the log or not.</description>
+            </parameter>
+            <parameter name="$path" type="string" defaultvalue="">
+              <description>The log file path folder.</description>
+            </parameter>
+            <parameter name="$filename" type="string" defaultvalue="">
+              <description>The log file name inside the folder.</description>
+            </parameter>
+          </parameters>
+          <returndescription>True on success, false on failure.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="initialiseParser" returntype="DOMParser" static="true">
+          <description>Initialize the logger by creating the log file.</description>
+          <parameters>
+            <parameter name="$path" type="string" defaultvalue="">
+              <description>The log file path folder.</description>
+            </parameter>
+            <parameter name="$filename" type="string" defaultvalue="">
+              <description>The log file name inside the folder.</description>
+            </parameter>
+          </parameters>
+          <returndescription>The DOMParser loaded with the xml file.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

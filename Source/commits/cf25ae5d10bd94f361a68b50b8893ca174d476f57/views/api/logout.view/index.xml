@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="logout"><sdk_dependencies><dependency library="UI" object="Content"></dependency></sdk_dependencies><app_dependencies><dependency library="APP" object="Identity"></dependency><dependency library="APP" object="Security"></dependency><dependency library="APP" object="Utils"></dependency></app_dependencies></view>

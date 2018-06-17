@@ -1,0 +1,43 @@
+.loginBoxContainer .ntf {
+	background: #FFF;
+	padding: 20px;
+	margin: 10px;
+}
+.loginBoxContainer .ntf .ntf-header {
+	overflow: auto;
+}
+
+.loginBoxContainer .ntf .ntf-header .hd {
+	font-size: 1.3em;
+	line-height: 24px;
+	color: #ff5252;
+}
+
+.loginBoxContainer .ntf p.sub {
+	color: #5E6570;
+	font-size: 1.1em;
+	line-height: 1em;
+}
+
+.loginBoxContainer .ntf p.script {
+	font-size: 1em;
+	line-height: 16px;
+	padding: 10px;
+	background: #EEE;
+	border: 1px solid #CCC;
+	white-space: pre-wrap;
+	overflow: auto;
+}
+
+.loginBoxContainer .tryme {
+	width: 100px;
+	margin: 20px auto;
+	cursor: pointer;
+	background: #ff5252;
+	color: #FFF;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	text-align: center;
+	padding: 5px 10px;
+}

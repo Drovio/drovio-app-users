@@ -1,0 +1,2 @@
+window.loginBox=window.loginBox||{};window.loginBox.options={};window.loginBox.init=function(k){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://api.drov.io/apps/prejs/loginBox/"+k+"/loginBox";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(a,o)};
+loginBox.init("%{API_KEY}");

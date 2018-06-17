@@ -1,0 +1,50 @@
+.billingInfo {
+	.plan_row {
+		& {
+			margin: 10px;
+			overflow: auto;
+			position: relative;
+		}
+		.ico {
+			width: 48px;
+			height: 48px;
+			float: left;
+			background: url('%{media}/icons/billingIcons.svg') no-repeat;
+			background-size: cover;
+		}
+		&.free .ico {
+			background-position: 0px 0px;
+		}
+		.description {
+			& {
+				position: relative;
+				overflow: auto;
+				padding: 15px 10px;
+				line-height: 16px;
+			}
+			.title {
+				font-size: 12px;
+				color: #3D3535;
+			}
+			.info {
+				float: right;
+				font-size: 11px;
+				color: #777;
+			}
+			.bar {
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				height: 2px;
+				width: 50%;
+				background: #3D3535;
+			}
+		}
+	}
+	p {
+		margin-top: 20px;
+		font-size: 12px;
+		line-height: 16px;
+		color: #5E6570;
+	}
+}

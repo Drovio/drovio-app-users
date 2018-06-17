@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Identity" namespace="\">
+  <class name="account" abstract="">
+    <info>
+      <version>2.0</version>
+      <build>1</build>
+      <datecreated>1444584492</datecreated>
+      <daterevised>1445438047</daterevised>
+      <extends>
+        <object>\DRVC\Profile\account</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Account management class</title>
+      <description>This class handles the account connection to the team identity database.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="getInstance" returntype="account" static="true">
+          <description>Initialize the identity engine for the team making the api request.
+It will get the team info from the api key given.</description>
+          <parameters/>
+          <returndescription>The account instance.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAPIInstance" returntype="account" static="true">
+          <description>Initialize the identity engine for the team making the api request.
+It will get the team info from the api key given.</description>
+          <parameters/>
+          <returndescription>The account instance.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="init" returntype="void" static="true">
+          <description>Initialize the identity engine for the current team.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

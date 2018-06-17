@@ -1,0 +1,252 @@
+.setupApplicationContainer {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.setupApplicationContainer .setupApplication {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.setupApplicationContainer .step-container {
+	text-align: center;
+	color: #f2f2f2;
+	position: absolute;
+	top: 0px;
+	bottom: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.setupApplicationContainer .step-container .step-counter {
+	position: absolute;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-align: center;
+}
+.setupApplicationContainer .step-container .step {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	padding: 100px 0px 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.setupApplicationContainer .step-container .step.active {
+	display: block;
+}
+
+.setupApplicationContainer .step-container .step .step-icon {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: url('%{media}/dashboard/setup/setupIcons.svg') no-repeat center;
+	background-size: cover;
+	opacity: 0.5;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.setupApplicationContainer .step-container .step.welcome .step-icon {
+	background-position: 0px 0px;
+}
+
+.setupApplicationContainer .step-container .step.db .step-icon {
+	background-position: 0px -100px;
+}
+
+.setupApplicationContainer .step-container .step.settings .step-icon {
+	background-position: 0px -200px;
+}
+
+.setupApplicationContainer .step-container .step.auth .step-icon {
+	background-position: 0px -300px;
+}
+
+.setupApplicationContainer .step-container .step.import .step-icon {
+	background-position: 0px -400px;
+}
+
+.setupApplicationContainer .step-container .step.pricing .step-icon {
+	background-position: 0px -500px;
+}
+
+.setupApplicationContainer .step-container .step h1.title {
+	font-size: 2.6em;
+	font-weight: normal;
+	margin: 20px;
+}
+
+.setupApplicationContainer .step-container .step h2.sub {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin: 15px;
+}
+.setupApplicationContainer .step-container .step.db form.create_team_form {
+	margin-top: 40px;
+}
+
+.setupApplicationContainer .step-container .step.db form.create_team_form .finput {
+	font-size: 1em;
+	width: 250px;
+	background: none;
+	border: none;
+	color: #f2f2f2;
+	padding: 6px 10px;
+	border-bottom: 1px solid #41576E;
+	outline: none;
+}
+.setupApplicationContainer .step-container .step.db .create_team_success {
+	margin-top: 30px;
+}
+
+.setupApplicationContainer .step-container .step.db .create_team_success .success_ico {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 20px;
+	background: url('%{resources}/dashboard/setup/success_tick.svg') no-repeat center;
+	background-size: cover;
+}
+
+.setupApplicationContainer .step-container .step.db .create_team_success .success_title {
+	font-size: 1em;
+	font-weight: normal;
+}
+.setupApplicationContainer .step-container .step form .fbutton {
+	background: none;
+	color: #f2f2f2;
+	border: 1px solid #41576E;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 6px 10px;
+	width: 150px;
+	margin: 20px 10px 0px;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.setupApplicationContainer .step-container .step form .fbutton:hover {
+	background: #41576E;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+.setupApplicationContainer .step-container .step.settings .step-icon {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: url('%{media}/dashboard/setup/stIcon.svg') no-repeat center;
+	background-size: cover;
+	opacity: 0.5;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.setupApplicationContainer .step-container .step.settings .formContainer {
+	width: 500px;
+	margin: 30px auto 0px;
+}
+.setupApplicationContainer .step-container .step-buttons {
+	margin-top: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.setupApplicationContainer .step-container .step-buttons .step-btn {
+	display: block;
+	color: #f2f2f2;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.setupApplicationContainer .step-container .step-buttons .step-btn .step-btn-ico {
+	width: 32px;
+	height: 32px;
+	background: url('%{resources}/dashboard/marrow.svg') no-repeat center;
+	background-size: cover;
+	border: 2px solid #41576E;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin: 0px 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.setupApplicationContainer .step-container .step-buttons .step-btn .step-btn-title {
+	line-height: 32px;
+	font-size: 1.2em;
+}
+.setupApplicationContainer .step-container .step-buttons .step-btn:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.setupApplicationContainer .step-container .step-buttons .step-btn:hover .step-btn-ico {
+	background-color: #41576E;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+.setupApplicationContainer .setup-footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	color: #f2f2f2;
+	height: 50px;
+}
+
+.setupApplicationContainer .setup-footer p.copyright {
+	font-size: 1em;
+	line-height: 20px;
+	padding: 15px 30px;
+	margin: 0px;
+}
+
+.setupApplicationContainer .setup-footer a {
+	color:#ff5252;
+}

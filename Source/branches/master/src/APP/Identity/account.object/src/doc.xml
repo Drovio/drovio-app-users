@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Identity" namespace="\">
+  <class name="account" abstract="">
+    <info>
+      <version>6.0</version>
+      <build>3</build>
+      <datecreated>1444584492</datecreated>
+      <daterevised>1447594645</daterevised>
+      <extends>
+        <object>\AEL\Identity\account</object>
+      </extends>
+      <implements/>
+      <throws/>
+      <title>Account management class</title>
+      <description>This class handles the account connection to the team identity database.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="account" name="instance" static="true">
+          <description>The platform account instance.</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="getInstance" returntype="account" static="true">
+          <description>Initialize the identity engine for the current team.</description>
+          <parameters/>
+          <returndescription>The account instance.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAuthToken" returntype="string">
+          <description>Get the authentication token from the request.</description>
+          <parameters/>
+          <returndescription>The authentication token.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAPIInstance" returntype="account" static="true">
+          <description>Initialize the identity engine for the team making the api request.
+It will get the team info from the api key given.</description>
+          <parameters/>
+          <returndescription>The account instance.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="initialize" returntype="void">
+          <description>Initialize the current instance with account values.</description>
+          <parameters>
+            <parameter name="$accountID" type="integer" defaultvalue="">
+              <description>The account id.</description>
+            </parameter>
+            <parameter name="$mxID" type="string" defaultvalue="">
+              <description>The mx id.</description>
+            </parameter>
+            <parameter name="$personID" type="string" defaultvalue="">
+              <description>The person id (if any).
+It is NULL by default.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated>No longer needed since we use engine to get standard variable names.</deprecated>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

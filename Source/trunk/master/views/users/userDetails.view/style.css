@@ -1,0 +1,168 @@
+.userDetailsContainer {
+	min-width: 800px;
+	max-width: 800px;
+	padding: 20px;
+	background: #FFF;
+	border: 1px solid #555459;
+	overflow: auto;
+}
+
+.userDetailsContainer .header {
+	font-size: 16px;
+	color: #5E6570;
+	margin: 10px;
+	line-height: 30px;
+	overflow: auto;
+}
+
+.userDetailsContainer .close_button {
+	width: 24px;
+	height: 24px;
+	margin: 3px 0px;
+	float: right;
+	cursor: pointer;
+	background: url('%{media}/icons/closeX.svg') no-repeat center;
+	background-size: cover;
+	background-position: 0px 0px;
+	opacity: 0.5;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userDetailsContainer .close_button:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+.userDetailsContainer .side-info {
+	width: 20%;
+	float: left;
+	overflow: auto;
+}
+
+.userDetailsContainer .side-info .profilePic {
+	width: 100px;
+	height: 100px;
+	background: url('%{media}/icons/profile.svg');
+	background-size: cover;
+	margin: 10px auto;
+}
+
+.userDetailsContainer .side-info .abutton {
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;  
+	line-height: 24px;
+	padding: 5px 0px;
+	position: relative;
+	cursor: pointer;
+	margin: 5px 0px;
+	border: 1px solid rgb(225,225,225);
+	color: rgb(102, 102, 102);
+	text-align: center;
+	background: -webkit-linear-gradient(0deg, rgb(243,243,243) 0, rgb(233,233,233) 100%), rgb(238, 238, 238);
+	background: -moz-linear-gradient(90deg, rgb(243,243,243) 0, rgb(233,233,233) 100%), rgb(238, 238, 238);
+	background: linear-gradient(90deg, rgb(243,243,243) 0, rgb(233,233,233) 100%), rgb(238, 238, 238);
+	-webkit-background-origin: padding-box;
+	background-origin: padding-box;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	-webkit-background-size: auto auto;
+	background-size: auto auto;
+	-webkit-transition: all 0.1s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+	-moz-transition: all 0.1s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+	transition: all 0.1s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+.userDetailsContainer .side-info .abutton:hover {
+	color: rgba(135,135,135,1);
+	background: -webkit-linear-gradient(-90deg, rgb(255,255,255) 0, rgb(235,235,235) 100%), -webkit-linear-gradient(0deg, rgb(243,243,243) 0, rgb(233,233,233) 100%), rgb(238, 238, 238);
+	background: -moz-linear-gradient(180deg, rgb(255,255,255) 0, rgb(235,235,235) 100%), -moz-linear-gradient(90deg, rgb(243,243,243) 0, rgb(233,233,233) 100%), rgb(238, 238, 238);
+	background: linear-gradient(180deg, rgb(255,255,255) 0, rgb(235,235,235) 100%), linear-gradient(90deg, rgb(243,243,243) 0, rgb(233,233,233) 100%), rgb(238, 238, 238);
+	-webkit-background-origin: padding-box;
+	background-origin: padding-box;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	-webkit-background-size: auto auto;
+	background-size: auto auto;
+}
+.userDetailsContainer .main-content {
+	float: right;
+	width: 80%;
+	position: relative;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.userDetailsContainer .main-content .basic-info {
+	margin-bottom: 10px;
+	color: #5E6570;
+}
+
+.userDetailsContainer .main-content .basic-info .row {
+	padding: 5px 0px;
+	overflow: auto;
+	clear: both;
+}
+
+.userDetailsContainer .main-content .basic-info .row .value {
+	float: left;
+}
+
+.userDetailsContainer .main-content .basic-info .row .label {
+	float: left;
+	width: 7em;
+	margin-right: 1em;
+	font-weight: 900;
+}
+
+.userDetailsContainer .main-content .whiteBox {
+	clear: both;
+	padding: 5px;
+	overflow: auto;
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+
+.userDetailsContainer .main-content .menu {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+}
+
+.userDetailsContainer .main-content .menu .menu_item {
+	float: left;
+	padding: 10px 25px;
+	margin: 0px;
+	cursor: pointer;
+	color: #5E6570;
+	border: 1px solid transparent;
+	border-bottom: none;
+}
+
+.userDetailsContainer .main-content .menu .menu_item.selected {
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	border-bottom: none;
+}
+
+@media screen and (max-width: 700px) {
+	.userDetailsContainer {
+		min-width: 500px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.userDetailsContainer {
+		min-width: 250px;
+	}
+}

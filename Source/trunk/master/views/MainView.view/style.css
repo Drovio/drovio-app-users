@@ -1,0 +1,210 @@
+.userManagement {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: #EEE;
+}
+.userManagement .sidebar {
+	height: 100%;
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: auto;
+}
+.userManagement .sidebar .side_menu {
+	width: 90%;
+	margin: 0 auto;
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-top: none;
+	border-radius: 0px 0px 3px 3px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	overflow: auto;
+}
+
+.userManagement .sidebar .side_menu .menuitem {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-size: 1em;
+	color: #5E6570;
+	border-left: 3px solid transparent;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 20px;
+}
+
+.userManagement .sidebar .side_menu .menuitem:hover {
+	color: #ff5252;
+	border-left: 3px solid #ff5252;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .sidebar .side_menu .menuitem.selected, .userManagement .sidebar .side_menu .menuitem.selected:hover {
+	background: #3D3535;
+	border-left: 3px solid #ff5252;
+	color: #FFF;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .sidebar .side_menu .menuitem .ico {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+	background: url('%{media}/icons/menuSprite.svg') no-repeat;
+	background-size: 40px 160px;
+	background-position: 0px 0px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .sidebar .side_menu .menuitem.overview .ico {
+	background-position: 0px 0px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.users .ico {
+	background-position: 0px -20px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.social .ico {
+	background-position: 0px -40px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.loginbox .ico {
+	background-position: 0px -60px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.forms .ico {
+	background-position: 0px -80px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.settings .ico {
+	background-position: 0px -100px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.about .ico {
+	background-position: 0px -120px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.demo .ico {
+	background-position: 0px -140px;
+}
+
+.userManagement .sidebar .side_menu .menuitem.selected .ico {
+	background-position-x: -20px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .sidebar .side_menu .menuitem .reload {
+	display: none;
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin: 2px 0px;
+	background: url('%{media}/icons/devIcons_w.svg') no-repeat;
+	background-size: cover;
+	background-position: 0px -48px;
+	opacity: 0.5;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .sidebar .side_menu .menuitem.selected .reload {
+	display: block;
+}
+
+.userManagement .sidebar .side_menu .menuitem.selected .reload:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .sidebar .side_menu .mseparator {
+	height: 1px;
+	background: #CCC;
+	margin: 5px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.userManagement .sidebar .try_me {
+	width: 80%;
+	height: 50px;
+	margin: 10px auto;
+	background: url('%{media}/icons/try_me.svg') no-repeat center;
+	background-size: contain;
+	opacity: 0.7;
+}
+
+.userManagement .mainContent {
+	float: right;
+	width: 75%;
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: auto;
+}
+.userManagement .welcome_notification {
+	background: #FFF;
+	padding: 20px 50px;
+	margin: 10px;
+}
+.userManagement .welcome_notification .ntf-header {
+	overflow: auto;
+}
+
+.userManagement .welcome_notification .ntf-header .close_button {
+	width: 24px;
+	height: 24px;
+	float: right;
+	background: url('%{media}/icons/closeX.svg') no-repeat;
+	background-size: cover;
+	background-position: 0px 0px;
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .welcome_notification .ntf-header .close_button:hover {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.userManagement .welcome_notification .ntf-header .hd {
+	font-size: 1.3em;
+	line-height: 24px;
+	color: #ff5252;
+}
+
+.userManagement .welcome_notification p.sub {
+	color: #5E6570;
+	font-size: 1.1em;
+	line-height: 1em;
+}

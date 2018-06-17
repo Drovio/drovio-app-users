@@ -1,0 +1,66 @@
+// Lets require/import modules
+var http = require('http');
+var qs = require('querystring');
+var request = require('request');
+
+// Lets define a port we want to listen to
+const PORT=8080; 
+
+// Create a server
+var server = http.createServer(handleRequest);
+
+// Lets start our server
+server.listen(PORT, function(){
+    // Callback triggered when server is successfully listening. Hurray!
+    console.log("Server listening on: http://localhost:%s", PORT);
+});
+
+//We need a function which handles requests and send response
+function handleRequest(req, resp){
+
+	// LOGIN USER TO IDENTITY SERVICE
+	if (req.method == "POST")
+	{
+		var postData;
+		// Get post data
+		req.on('data', function (data) {
+			// Parse post data
+			postData = qs.parse(data.toString());
+		});
+
+		// End script
+		req.on('end', function () {
+			// Send the registration request
+			request({
+				uri: "https://api.drov.io/apps/89/%{akey}/api/login",
+				method: "POST",
+				timeout: 10000,
+				form: {
+					username: postData.username,
+					password: postData.password
+				}
+			}, function(error, response, body) {
+				// Get body response
+				var responseObject = JSON.parse(body);
+
+				// Check for login status
+				if (responseObject.body.login && responseObject.body.login.payload.status == 1)
+				{
+					// Successfull login
+					console.log(responseObject.body.login.payload.message);
+
+					// Get authentication token
+					var authToken = responseObject.body.login.payload.auth_token;
+					console.log(authToken);
+				}
+				else
+				{
+					// Show error message
+					console.log(responseObject.body.login.payload.message);
+				}
+			});
+		});
+	}
+
+	resp.end('Server ended');
+}

@@ -1,0 +1,64 @@
+.formExplorer h1.hd {
+	font-size: 2em;
+	margin: 20px 0px;
+	text-align: center;
+	color: #ff5252;
+}
+
+.formExplorer p.sub {
+	font-size: 1.3em;
+	margin: 10px 0px;
+	text-align: center;
+	color: #5E6570;
+}
+.formExplorer .wz-menu {
+	width: 80%;
+	list-style-type: none;
+	margin: 40px auto;
+	padding: 0;
+	overflow: auto;
+}
+.formExplorer .wz-menu .wz-menu-item {
+	float: left;
+	width: 33.33%;
+	cursor: pointer;
+}
+
+.formExplorer .wz-menu .wz-menu-item .ico {
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	background: url('%{media}/icons/formIcons.svg') no-repeat;
+	background-size: 100px 400px;
+	background-position-x: center;
+	opacity: 0.2;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.formExplorer .wz-menu .wz-menu-item:hover .ico, .formExplorer .wz-menu .wz-menu-item.selected .ico {
+	opacity: 1;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+}
+
+.formExplorer .wz-menu .wz-menu-item .title {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 10px;
+	color: #5E6570;
+}
+
+.formExplorer .wz-menu .wz-menu-item.registration .ico {
+	background-position-y: 0px;
+}
+
+.formExplorer .wz-menu .wz-menu-item.login .ico {
+	background-position-y: -100px;
+}
+
+.formExplorer .wz-menu .wz-menu-item.recover .ico {
+	background-position-y: -200px;
+}

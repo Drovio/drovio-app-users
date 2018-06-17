@@ -1,0 +1,27 @@
+.demoInfo {
+	text-align: center;
+	color: #5E6570;
+}
+
+.demoInfo h1.hd {
+	font-size: 14px;
+	margin: 10px 0px;
+}
+
+.demoInfo p.sub {
+	font-size: 12px;
+	line-height: 16px;
+}
+.demoInfo .code {
+	width: 80%;
+	margin: 20px auto;
+	padding: 10px 15px;
+	border: 1px solid #CCC;
+	background: #DDD;
+	overflow: auto;
+	text-align: center;
+}
+
+.demoInfo .code div, .demoInfo .code span {
+	margin: 5px 0px;
+}

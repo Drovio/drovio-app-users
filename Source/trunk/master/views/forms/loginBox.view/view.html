@@ -1,0 +1,49 @@
+<div class="loginBox">
+	<div class="ntf box">
+		<div class="ntf-header">
+			<div class="hd" data-literal='{"scope":"forms.loginbox","name":"hd_loginbox"}' />
+		</div>
+		<div class="ntf-body">
+			<p class="sub" data-literal='{"scope":"forms.loginbox","name":"lbl_box_directions"}' />
+			<p class="sub script" />
+			<p class="sub" data-literal='{"scope":"forms.loginbox","name":"lbl_box_load"}' />
+			<p class="sub script">loginBox.show();</p>
+			<div class="tryme" data-literal='{"scope":"forms.loginbox","name":"lbl_tryme"}' />
+		</div>
+	</div>
+	<div class="ntf page">
+		<div class="ntf-header">
+			<div class="hd" data-literal='{"scope":"forms.loginbox","name":"hd_loginpage"}' />
+		</div>
+		<div class="ntf-body">
+			<p class="sub" data-literal='{"scope":"forms.loginbox","name":"lbl_page_directions"}' />
+			<p class="sub script">&lt;script&gt;
+loginBox.options.placeholder = "#login_container"; // Any placeholder, this is an example
+loginBox.options.preload = true;
+&lt;/script&gt;</p>
+		</div>
+	</div>
+	<div class="ntf parameters">
+		<div class="ntf-header">
+			<div class="hd" data-literal='{"scope":"forms.loginbox","name":"hd_loginbox_parameters"}' />
+		</div>
+		<div class="ntf-body">
+			<p class="sub" data-literal='{"scope":"forms.loginbox","name":"lbl_box_parameters"}' />
+			<p class="sub script">&lt;script&gt;
+// Set custom loginBox options
+loginBox.options.cookie_auth_token = "token_cookie_name";
+loginBox.options.cookie_domain = "your.domain.com"; (it's empty by default and will get the current domain)
+loginBox.options.cookie_duration = 30; (measured in days, by default it remembers the user for 30 days)
+loginBox.options.login_callback = function() {
+	window.location.href = "my.home.page";
+}
+loginBox.options.register_callback = function() {
+	window.location.href = "my.home.page";
+}
+loginBox.options.logout_callback = function() {
+	window.location.href = "my.home.page";
+}
+&lt;/script&gt;</p>
+		</div>
+	</div>
+</div>
